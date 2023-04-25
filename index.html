@@ -58,6 +58,8 @@
         #content .nav-item {
           width: 154 !important;
           background-color: #EDEDED;
+          /* border-color: #a09f9f;
+          border-style: dashed; */
         }
         :root #content .newsbar {
           float: left;
@@ -147,10 +149,13 @@
         #content .clear {
           clear: left;
         }
+        .cell {
+
+        }
       </STYLE>
     </HEAD>
     <body id="main" TEXT=#000000 BGCOLOR=#D7D7CD LEFTMARGIN=0px TOPMARGIN=0px MARGINWIDTH=0px MARGINHEIGHT=0px LINK=#225C8E VLINK=#225C8E ALINK=#225C8E WIDTH=100% BORDER=0px>
-      <header>
+      <header style="display: flex; flex-direction: column; padding-bottom: 2em;">
         <div WIDTH=780px HEIGHT=144px BGCOLOR=WHITE>
           <A HREF=home.html>
             <IMG SRC=./img/top_logo.gif WIDTH=443px HEIGHT=86px ALT="Welcome To Matt's Matt Logo" />
@@ -176,27 +181,11 @@
             </SELECT>
           </div>
         </div>
-          
-        </TR>
-        <TR HEIGHT=7px>
-          <TD WIDTH=780px BACKGROUND=./img/mark.gif COLSPAN=5><IMG SRC=./img/mark.gif WIDTH=158px HEIGHT=7px ALT="Gray rectangle."></TD>
-        </TR>
-        <TR HEIGHT=25px>
-          <TD COLSPAN=5>
-            <TABLE WIDTH=780px BORDER=0px CELLSPACING=0px CELLPADDING=0px>
-              <TR HEIGHT=25px>
-                <TD BGCOLOR="#EDEDED" WIDTH=380px><FONT COLOR=BLACK FACE=Verdana SIZE=2>&nbsp;&nbsp;<B>Save:</B> 10% off your first order. Use code <i>10first</i></FONT></TD>
-                <TD BGCOLOR="#EDEDED" ALIGN=RIGHT ID="WEATHER"><FONT COLOR=BLACK FACE=Verdana SIZE=2><B>New:</B> Upload an image for custom mats&nbsp;&nbsp;</TD>
-              </TR>
-            </TABLE>
-          </TD>
-        </TR>
-        <TR HEIGHT=1px>
-          <TD WIDTH=780px BACKGROUND=./img/marker2_w.gif COLSPAN=5><IMG SRC=.img/marker2_w.gif WIDTH=78px HEIGHT=1px ALT="Horizontal dashed line."></TD>
-        </TR>
-        <TR HEIGHT=25px>
-          <TD COLSPAN=5>&nbsp;</TD>
-        </TR>
+        <img src="./img/mark.gif" alt="Gray bar" style="width: 780; height: 7;">
+        <div style="display: flex; background-color: #EDEDED; justify-content: space-between;">
+          <p BGCOLOR="#EDEDED">&nbsp;&nbsp;<b style="font-weight: bold;">Save:</b> 10% off your first order. Use code <i>10first</i></p>
+          <p BGCOLOR="#EDEDED" ALIGN=RIGHT ID="WEATHER"><b style="font-weight: bold;">New:</b> Upload an image for custom mats&nbsp;&nbsp;</p>          
+        </div>
       </header>
       <main WIDTH=780px BORDER=0px BGCOLOR=WHITE id="content">
         <div class="nav">
@@ -262,49 +251,43 @@
           </TD>
         </div>
         <!-- <TD WIDTH=20px><IMG SRC=./img/blank_5x5.gif WIDTH=20px HEIGHT=5px ALT="Blank 5x5 square."></TD> -->
-        <div WIDTH=151px VALIGN=TOP>
-          <TABLE WIDTH=151px BORDER=0px CELLSPACING=0px CELLPADDING=0px>
-            <TR HEIGHT=1px>
-              <TD WIDTH=1px BACKGROUND=./img/marker2_t.gif ROWSPAN=11 VALIGN=TOP><IMG SRC=./img/marker2_t.gif WIDTH=1px HEIGHT=30px ALT="Vertical dashed line."></TD>
-              <TD WIDTH=151px BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px ALT="Horizontal dashed line."></TD>
-            </TR>
-            <TR HEIGHT=25px>
-              <TD WIDTH=150px BGCOLOR=#A9B8BF><FONT COLOR=#000000 FACE=Verdana SIZE=2>&nbsp;<B>Custom Doormats</B></FONT></TD>
-            </TR>
-            <TR HEIGHT=106px>
-              <TD WIDTH=150px><DIV><IMG SRC=./img/teaser_right1.jpg WIDTH=150px HEIGHT=106px ALT="Red rectangle with white Any Mesage Here written in white."></DIV></TD>
-            </TR>
-            <TR>
-              <TD WIDTH=150px>
-                <TABLE WIDTH=150px BORDER=0px CELLSPACING=0px CELLPADDING=3px>
-                  <TR>
-                    <TD><DIV>Use our design tool or upload your own image to create a custom doormat.<BR><A HREF=custom.html ONFOCUS="blur();" STYLE="text-decoration:none;">Read More...</A></DIV></TD>
-                  </TR>
+        <div style="width: 151px" VALIGN=TOP>
+          <div class="cell">
+            <div HEIGHT=1px>
+              <div WIDTH=1px BACKGROUND=./img/marker2_t.gif ROWSPAN=11 VALIGN=TOP><IMG SRC=./img/marker2_t.gif WIDTH=1px HEIGHT=30px ALT="Vertical dashed line."></TD>
+              <div WIDTH=151px BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px ALT="Horizontal dashed line."></TD>
+            </div>
+            <div HEIGHT=25px>
+              <div WIDTH=150px style="background-color:#A9B8BF; width: 150px;"><B>Custom Doormats</B></div>
+            </div>
+            <div HEIGHT=106px>
+              <div WIDTH=150px><DIV><IMG SRC=./img/teaser_right1.jpg WIDTH=150px HEIGHT=106px ALT="Red rectangle with white Any Mesage Here written in white."></DIV></TD>
+            </div>
+            <div>
+              <div WIDTH=150px>
+                  <p>Use our design tool or upload your own image to create a custom doormat.<BR><A HREF=custom.html ONFOCUS="blur();" STYLE="text-decoration:none;">Read More...</A></p>
                 </TABLE>
               </TD>
-            </TR>
-            <TR HEIGHT=17px>
-              <TD>&nbsp;</TD>
-            </TR>
-            <TR HEIGHT=1px>
-              <TD WIDTH=150px BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px ALT="Horizontal dashed line."></TD>
-            </TR>
-            <TR HEIGHT=25px>
-              <TD WIDTH=150px BGCOLOR=#A9B8BF><FONT COLOR=#000000 FACE=Verdana SIZE=2>&nbsp;<B>Mat of the Week</B></FONT></TD>
-            </TR>
-            <TR HEIGHT=100px>
-              <TD WIDTH=150px><IMG SRC=./img/teaser_right2.jpg WIDTH=150px HEIGHT=100px ALT="Rub that say Don't Stop Be Leaving."></TD>
-            </TR>
-            <TR>
-              <TD WIDTH=150px>
-                <TABLE WIDTH=150px BORDER=0px CELLSPACING=0px CELLPADDING=3px>
-                  <TR>
-                    <TD>Annie from Anchorage sent us this snap of her new custom rug on her doorstep. We've got a whole gallery for inspiration.<BR><A HREF=survey.html ONFOCUS="blur();" STYLE="text-decoration:none;">Read More...</A></TD>
-                  </TR>
+            </div>
+          </div>
+          <div class="cell">
+            <div HEIGHT=1px>
+              <div WIDTH=1px BACKGROUND=./img/marker2_t.gif ROWSPAN=11 VALIGN=TOP><IMG SRC=./img/marker2_t.gif WIDTH=1px HEIGHT=30px ALT="Vertical dashed line."></TD>
+              <div WIDTH=151px BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px ALT="Horizontal dashed line."></TD>
+            </div>
+            <div HEIGHT=25px>
+              <div WIDTH=150px style="background-color:#A9B8BF; width: 150px;"><B>Mat of the Week</B></div>
+            </div>
+            <div HEIGHT=106px>
+              <div WIDTH=150px><DIV><IMG SRC=./img/teaser_right2.jpg WIDTH=150px HEIGHT=106px ALT="Red rectangle with white Any Mesage Here written in white."></DIV></TD>
+            </div>
+            <div>
+              <div WIDTH=150px>
+                  <p>Annie from Anchorage sent us this snap of her new custom rug on her doorstep. We've got a whole gallery for inspiration.<BR><A HREF=survey.html ONFOCUS="blur();" STYLE="text-decoration:none;">Read More...</A></p>
                 </TABLE>
               </TD>
-            </TR>
-          </TABLE>
+            </div>
+          </div>
         </div>
       </main>
           <!--// END FOOTER AREA //-->
