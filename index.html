@@ -150,8 +150,9 @@
           <TD WIDTH=128px VALIGN=MIDDLE><IMG SRC=./img/top_door.gif WIDTH=128px HEIGHT=86px ALT="Brown door with a red mat."></TD>
           <TD WIDTH=22px VALIGN=MIDDLE><IMG SRC=./img/top_logo_next_start.gif WIDTH=22px HEIGHT=86px ALT="Gray rectangle used for the beginning of the border."></TD>
           <TD WIDTH=163px BACKGROUND=./img/top_logo_next.gif ALIGN=CENTER VALIGN=MIDDLE>
-            <SELECT ONCHANGE="location.href = this.value;">
-              <OPTION SELECTED>QUICKNAV ----&gt;
+            <LABEL for="Nav">QUICKNAV ----&gt;</LABEL>
+            <SELECT ID="Nav" ONCHANGE="location.href = this.value;">
+              <!-- <OPTION SELECTED>QUICKNAV ----&gt; -->
               <OPTION VALUE="../doormats.html">Doormats
               <OPTION VALUE="../kitchen.html">Kitchen Mats
               <OPTION VALUE="../exercise.html">Exercise Mats
