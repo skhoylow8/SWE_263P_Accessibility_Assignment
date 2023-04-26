@@ -1,0 +1,276 @@
+<HTML lang="en">
+    <HEAD>
+      <META charset="UTF-8">
+      <META http-equiv="X-UA-Compatible" content="IE=edge">
+      <META name="viewport" content="width=device-width, initial-scale=1.0">
+      <TITLE>Welcome to Matt's Mats</TITLE>    
+      <STYLE>
+        header, main {
+          display: flex;
+          margin-left: auto;
+          margin-right: auto;
+          width: 780; 
+          background-color: white;
+        }
+          #main * {
+            color: #000000;
+            font: normal 15px "Times New Roman", Times, serif;
+            text-decoration: none;
+          }
+          #main p{
+            margin: 6px 0;
+          }
+          #main a {
+            text-decoration: none;
+            color: #226C8E;
+          }
+          #main h1 {
+            margin-top: 0px;
+            color: #41545d;
+            font: 24px verdana;
+            font-family: impact;
+            text-decoration: none;
+            margin-bottom: 0px;
+          }
+          #main .subheadline {
+            padding:16px 0 6px 0;
+            color: #41545d;
+            font: 20px verdana;
+            font-family: impact;
+            text-decoration: none;
+          }
+          #content * {
+            margin: 0;
+            padding: 0;
+            /* display: inline-block; */
+          }
+          #content p{
+            margin: 6px 0;
+          }
+          #content .newsbar {
+            background: #eeeee;
+          }
+          #content .nav {
+            width: 155;
+            height: auto;
+            background-color: #E4E4E4 !important;
+          }
+          #content .nav-item {
+            width: 154 !important;
+            background-color: #EDEDED;
+            border: dashed rgb(187, 187, 187) 1px;
+          }
+          :root #content .newsbar {
+            float: left;
+            width: 100%;
+          }
+          #content .newsheadline img {
+            float: left;
+            padding: 0;
+            margin: 0 5px 15px 0;
+          }
+          #content .newsheadline {
+            width: 135px;
+            margin-right: 5px;
+            background: #ededed;
+            padding-right: 10px;
+            vertical-align: top;
+            display: inline-block;
+          }
+          #content .newsheadline a {
+            color: black;
+            font-weight: bold;
+            background: #ededed;
+          }
+          #content .newsheadline p {
+            font-weight: bold;
+            background: #ededed;
+          }
+          * html #content .newsheadline {
+            width: 138px;
+            display: inline;
+          }
+          :root #content .newsheadline {
+            float: left;
+            width: 128px;
+            display: inline;
+          }
+          #content .image {
+            width: 135px;
+            height: 119px;
+            padding: 0 5px;
+            margin-right: 5px;
+            background: #cccccc;
+            display: inline-block;
+          }
+          * html #content .image {
+            width: 138px;
+            display: inline;
+          }
+          :root #content .image {
+            float: left;
+            width: 128px;
+            display: block;
+            display: inline;
+          }
+          #content .story {
+            width: 135px;
+            margin-right: 5px;
+            background: #ededed;
+            vertical-align: top;
+            padding: 2px 5px 5px;
+            display: inline-block;
+          }
+          #content .story span {
+          }
+          * html #content .story {
+            width: 138px;
+            display: inline;
+          }
+          :root #content .story {
+            float: left;
+            width: 128px;
+            display: inline;
+          }
+          #content .headline {
+            clear: left;
+            color: #41545d;
+            margin-top: 5px;
+            padding-top: 1em;
+            font: 24px verdana;
+            font-family: impact;
+            margin-bottom: 15px;
+            text-decoration: none;
+          }
+          #content .midwidth {
+            height: 1px;
+          }
+          .clear {
+            font-size: 0;
+          }
+          .cell {
+            border: dashed rgb(187, 187, 187) 1px;
+            border-bottom: none;
+            border-right: none;
+          }
+        </STYLE>
+      </HEAD>
+      <body id="main" TEXT=#000000 BGCOLOR=#D7D7CD LEFTMARGIN=0px TOPMARGIN=0px MARGINWIDTH=0px MARGINHEIGHT=0px LINK=#225C8E VLINK=#225C8E ALINK=#225C8E WIDTH=100% BORDER=0px>
+        <header style="display: flex; flex-direction: column; padding-bottom: 2em;">
+          <div WIDTH=780px HEIGHT=144px BGCOLOR=WHITE style="display: flex;">
+            <A HREF=home.html style="font-size: 0;">
+              <IMG SRC=./img/top_logo.gif WIDTH=443px HEIGHT=86px ALT="Welcome To Matt's Matt Logo" />
+            </A>
+            <IMG style="font-size: 0;" SRC=./img/top_logo_next_end.gif WIDTH=24px HEIGHT=86px ALT="Gray rectangle used for the end of the border." />
+            <IMG style="font-size: 0;" SRC=./img/top_door.gif WIDTH=128px HEIGHT=86px ALT="Brown door with a red mat."/>
+            <IMG style="font-size: 0;" SRC=./img/top_logo_next_start.gif WIDTH=22px HEIGHT=86px ALT="Gray rectangle used for the beginning of the border."/>          
+            <form style="font-size: 0; width: 163px; background-color: rgb(222, 222, 222); text-align: center; height: 40; display: flex; flex-direction: column; align-self: center; margin-top: 4px;">
+              <LABEL for="Nav">Quick Navigation</LABEL>
+              <div style="display:flex; flex-direction: row;">
+                <SELECT ID="Nav">
+                  <OPTION SELECTED VALUE="0">QUICKNAV ----&gt;
+                  <OPTION VALUE="../doormats.html">Doormats
+                  <OPTION VALUE="../kitchen.html">Kitchen Mats
+                  <OPTION VALUE="../exercise.html">Exercise Mats
+                  <OPTION VALUE="../custom.html">Custom Mats
+                  <OPTION VALUE="../accessories.html">Accessories
+                  <OPTION VALUE="../faqs.html">FAQs
+                  <OPTION VALUE="../service.html">Customer Service
+                  <OPTION VALUE="../shipping.html">Shipping
+                  <OPTION VALUE="../about.html">About Us
+                  <OPTION VALUE="../returns.html">Returns
+                  <OPTION VALUE="../contact.html">Contact Us
+                </SELECT>
+                <button type="submit" name="submit" value="submit">Go</button>
+              </div>
+            </form>
+          </div>
+          <img src="./img/mark.gif" alt="Gray bar" style="width: 780; height: 7;">
+          <div style="display: flex; background-color: #EDEDED; justify-content: space-between; border-bottom: dashed rgb(187, 187, 187) 1px;">
+            <p BGCOLOR="#EDEDED">&nbsp;&nbsp;<b style="font-weight: bold;">Save:</b> 10% off your first order. Use code <i>10first</i></p>
+            <p BGCOLOR="#EDEDED" ALIGN=RIGHT ID="WEATHER"><b style="font-weight: bold;">New:</b> Upload an image for custom mats&nbsp;&nbsp;</p>          
+          </div>
+        </header>
+        <main WIDTH=780px BORDER=0px BGCOLOR=WHITE id="content">
+          <div class="nav">
+            <div HEIGHT=34px>
+              <div  class="nav-item" id="home"><A HREF="javascript:location.href='home.html';" onFocus="blur();"><img name="nav_home" src=./img/nav_home.gif width=88 height=27 hspace="15" border=0px alt="Building with the words home."></a></div>
+            </div>
+            <div HEIGHT=34px class="nav-item">
+              <div id="shop"><A HREF="javascript:location.href='shop.html';" ONFOCUS="blur();"><IMG name="nav_shop" SRC=./img/nav_shop.gif WIDTH=105 HEIGHT=23 hspace="9" BORDER=0px ALT="File with the words shop."></A></div>
+            </div>
+            <div HEIGHT=34px class="nav-item">
+              <div id="news"><A HREF="javascript:location.href='news.html';" ONFOCUS="blur();"><IMG SRC=./img/nav_news.gif name="nav_news" WIDTH=90 HEIGHT=21 hspace="12" BORDER=0px ALT="Newspaper with the words shop."></A></div>
+            </div>
+            <div HEIGHT=34px class="nav-item">
+              <div id="survey"><A HREF="javascript:location.href='survey.html';" ONFOCUS="blur();"><IMG SRC=./img/nav_survey.gif name="nav_survey" WIDTH=107 HEIGHT=32 hspace="8" BORDER=0px ALT="Clipboard with the words shop."></A></div>
+            </div>
+          </div>
+          <div style="padding: 1em">
+            <h1 >Welcome to Matt's Mats</h1>
+            <p>Matt's Mats is your home on the web for all your mat needs. All styles and colors, indoor and outdoor. Look down - it's us!</p>
+            <div id="content">
+              <div class="midwidth"><div></div></div>
+              <div class="newsbar">
+                <div class="newsheadline"><img src="./img/headline_middle.gif" width="23" height="24" align="absmiddle" alt="White M with purple background."><b style="font-weight: bold;">Doormats</b></div>
+                <div class="newsheadline"><img src="./img/headline_middle.gif" width="23" height="24" align="absmiddle" alt="White M with purple background."><b style="font-weight: bold;">Kitchen Mats</b></div>
+                <div class="newsheadline"><img src="./img/headline_middle.gif" width="23" height="24" align="absmiddle" alt="White M with purple background."><b style="font-weight: bold;">Exercise Mat</b></div>
+                <div class="clear"><div class="null"></div></div>
+              </div>
+              <div class="newsbar">
+                <div class="image" style="background: url(./img/doormat-sm.jpg) center center no-repeat #cccccc" title="image"><div class="null"></div></div>
+                <div class="image" style="background: url(./img/kitchen-sm.jpg) center center no-repeat #cccccc" title="image"><div class="null"></div></div>
+                <div class="image" style="background: url(./img/exercise-sm.jpg) center center no-repeat #cccccc;" title="image"><div class="null"></div></div>
+                <div class="clear"><div class="null"></div></div>
+              </div>
+              <div class="newsbar">
+                <div class="story"><span>The best indoor and outdoor mats to welcome visitors to your home. Long-lasting colors won't fade in the sun.<br /><a href="doormats.html" onFocus="blur();"><img src="./img/morearrow.gif" width="48" height="10" alt="More with arrows pointing right." border="0" onMouseOver="this.src='./img/morearrow_a.gif'" onFocus="this.src='./img/morearrow_a.gif'" onMouseOut="this.src='./img/morearrow.gif'" onBlur="this.src='./img/morearrow.gif'" style="vertical-align: bottom"></a></span></div>
+                <div class="story"><span>Save your feet while cooking up your favorite dishes. Kitchen mats provide extra padding and comfort.<br /><a href="kitchen.html" onFocus="blur();"><img src="./img/morearrow.gif" width="48" height="10" alt="More with arrows pointing right." border="0" onMouseOver="this.src='./img/morearrow_a.gif'" onFocus="this.src='./img/morearrow_a.gif'" onMouseOut="this.src='./img/morearrow.gif'" onBlur="this.src='./img/morearrow.gif'" style="vertical-align: bottom"></a></span></div>
+                <div class="story"><span>Get your fit on in comfort and style. Mats for yoga, gymnastics, weight rooms, and playgrounds.<br /><a href="exercise.html" onFocus="blur();"><img src="./img/morearrow.gif" width="48" height="10" alt="More with arrows pointing right." border="0" onMouseOver="this.src='./img/morearrow_a.gif'" onFocus="this.src='./img/morearrow_a.gif'" onMouseOut="this.src='./img/morearrow.gif'" onBlur="this.src='./img/morearrow.gif'" style="vertical-align: bottom"></a></span></div>
+              </div>
+              <hr style="visibility:hidden; clear:both;">
+              <p class="subheadline">Our Environmental Commitment</p>
+              <p>We are serious about protecting the environment. We use sustainable materials and zero-waste manufacturing. We also have a recycling program and we'll take all your old rugs, even if we didn't manufacture them!<br/><br/><span><img src="./img/list_bullets.gif" alt="Arrow pointing right." border="0" align="absmiddle"> Sustainable materials <a onFocus="blur();" href="../materials.html" target="_blank">More info</a>.<br/><img src="./img/list_bullets.gif" alt="Arrow pointing right." border="0" align="absmiddle"> Manufacturing practices <a onFocus="blur();" href="../manufacturing.html" target="_blank">More info</a>.<br/><img src="./img/list_bullets.gif" alt="Arrow pointing right." border="0" align="absmiddle"> Recycling program <a onFocus="blur();" href="../recycling.html" target="_blank">More info</a>.</span><br/><br/><b>Got a question? Call us: </b><img src="./img/telefon_white_bg.gif" alt="1234 56789" border="0" align="absmiddle"></p>
+            </div>
+          </div>
+          <div style="width: 151px" VALIGN=TOP>
+            <div class="cell">
+              <div HEIGHT=25px>
+                <div WIDTH=150px style="background-color:#A9B8BF; width: 150px;"><B>Custom Doormats</B></div>
+              </div>
+              <div HEIGHT=106px>
+                <div WIDTH=150px><DIV><IMG SRC=./img/teaser_right1.jpg WIDTH=150px HEIGHT=106px ALT="Red rectangle with white Any Mesage Here written in white."></DIV></TD>
+              </div>
+              <div>
+                <div WIDTH=150px>
+                    <p>Use our design tool or upload your own image to create a custom doormat.<BR><A HREF=custom.html ONFOCUS="blur();" STYLE="text-decoration:none;">Read More...</A></p>
+                  </TABLE>
+                </TD>
+              </div>
+            </div>
+            <div class="cell">
+              <div HEIGHT=25px>
+                <div WIDTH=150px style="background-color:#A9B8BF; width: 150px;"><B>Mat of the Week</B></div>
+              </div>
+              <div HEIGHT=106px>
+                <div WIDTH=150px><DIV><IMG SRC=./img/teaser_right2.jpg WIDTH=150px HEIGHT=106px ALT="Doormat that says Don't Stop Be Leaving."></DIV></TD>
+              </div>
+              <div>
+                <div WIDTH=150px>
+                  <p>Annie from Anchorage sent us this snap of her new custom rug on her doorstep. We've got a whole gallery for inspiration.<BR><A HREF=survey.html ONFOCUS="blur();" STYLE="text-decoration:none;">Read More...</A></p>
+              </div>
+            </div>
+          </div>
+        </main>
+        <script>
+          document.querySelector("form")
+            .addEventListener("submit", function(e) {
+              e.preventDefault(); // prevent default action
+              var select = this.querySelector("select");
+              if (select.value !== "0") {
+                location.href = select.value;
+              }
+            })
+        </script>
+    </body>
+  </html>
