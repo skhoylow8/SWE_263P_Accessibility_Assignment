@@ -167,7 +167,7 @@
           <form style="font-size: 0; width: 163px; background-color: rgb(222, 222, 222); text-align: center; height: 40; display: flex; flex-direction: column; align-self: center; margin-top: 4px;">
             <LABEL for="Nav">Quick Navigation</LABEL>
             <div style="display:flex; flex-direction: row;">
-              <SELECT ID="Nav" ONCHANGE="location.href = this.value;">
+              <SELECT ID="Nav">
                 <!-- <OPTION SELECTED>QUICKNAV ----&gt; -->
                 <OPTION VALUE="../doormats.html">Doormats
                 <OPTION VALUE="../kitchen.html">Kitchen Mats
@@ -262,5 +262,15 @@
           </div>
         </div>
       </main>
+      <script>
+        document.querySelector("form")
+          .addEventListener("submit", function(e) {
+            e.preventDefault(); // prevent default action
+            var select = this.querySelector("select");
+            if (select.value !== "0") {
+              location.href = select.value;
+            }
+          })
+      </script>
   </body>
 </html>
