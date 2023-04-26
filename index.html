@@ -58,8 +58,7 @@
         #content .nav-item {
           width: 154 !important;
           background-color: #EDEDED;
-          /* border-color: #a09f9f;
-          border-style: dashed; */
+          border: dashed rgb(187, 187, 187) 1px;
         }
         :root #content .newsbar {
           float: left;
@@ -146,24 +145,26 @@
         #content .midwidth {
           height: 1px;
         }
-        #content .clear {
-          clear: left;
+        .clear {
+          font-size: 0;
         }
         .cell {
-
+          border: dashed rgb(187, 187, 187) 1px;
+          border-bottom: none;
+          border-right: none;
         }
       </STYLE>
     </HEAD>
     <body id="main" TEXT=#000000 BGCOLOR=#D7D7CD LEFTMARGIN=0px TOPMARGIN=0px MARGINWIDTH=0px MARGINHEIGHT=0px LINK=#225C8E VLINK=#225C8E ALINK=#225C8E WIDTH=100% BORDER=0px>
       <header style="display: flex; flex-direction: column; padding-bottom: 2em;">
-        <div WIDTH=780px HEIGHT=144px BGCOLOR=WHITE>
-          <A HREF=home.html>
+        <div WIDTH=780px HEIGHT=144px BGCOLOR=WHITE style="display: flex;">
+          <A HREF=home.html style="font-size: 0;">
             <IMG SRC=./img/top_logo.gif WIDTH=443px HEIGHT=86px ALT="Welcome To Matt's Matt Logo" />
           </A>
-          <IMG SRC=./img/top_logo_next_end.gif WIDTH=24px HEIGHT=86px ALT="Gray rectangle used for the end of the border." />
-          <IMG SRC=./img/top_door.gif WIDTH=128px HEIGHT=86px ALT="Brown door with a red mat."/>
-          <IMG SRC=./img/top_logo_next_start.gif WIDTH=22px HEIGHT=86px ALT="Gray rectangle used for the beginning of the border."/>          
-          <div WIDTH=163px BACKGROUND=./img/top_logo_next.gif ALIGN=CENTER STYLE="display: inline;" BGCOLOR=WHITE>
+          <IMG style="font-size: 0;" SRC=./img/top_logo_next_end.gif WIDTH=24px HEIGHT=86px ALT="Gray rectangle used for the end of the border." />
+          <IMG style="font-size: 0;" SRC=./img/top_door.gif WIDTH=128px HEIGHT=86px ALT="Brown door with a red mat."/>
+          <IMG style="font-size: 0;" SRC=./img/top_logo_next_start.gif WIDTH=22px HEIGHT=86px ALT="Gray rectangle used for the beginning of the border."/>          
+          <div style="font-size: 0; width: 163px; background-color: rgb(222, 222, 222); text-align: center; height: 40; display: flex; flex-direction: column; align-self: center; margin-top: 4px;">
             <LABEL for="Nav">Quick Navigation</LABEL>
             <SELECT ID="Nav" ONCHANGE="location.href = this.value;">
               <!-- <OPTION SELECTED>QUICKNAV ----&gt; -->
@@ -182,42 +183,43 @@
           </div>
         </div>
         <img src="./img/mark.gif" alt="Gray bar" style="width: 780; height: 7;">
-        <div style="display: flex; background-color: #EDEDED; justify-content: space-between;">
+        <div style="display: flex; background-color: #EDEDED; justify-content: space-between; border-bottom: dashed rgb(187, 187, 187) 1px;">
           <p BGCOLOR="#EDEDED">&nbsp;&nbsp;<b style="font-weight: bold;">Save:</b> 10% off your first order. Use code <i>10first</i></p>
           <p BGCOLOR="#EDEDED" ALIGN=RIGHT ID="WEATHER"><b style="font-weight: bold;">New:</b> Upload an image for custom mats&nbsp;&nbsp;</p>          
         </div>
+        <!-- <div WIDTH=780px BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px ALT=""></div> -->
       </header>
       <main WIDTH=780px BORDER=0px BGCOLOR=WHITE id="content">
         <div class="nav">
           <!-- <div WIDTH=155px BORDER=0px CELLSPACING=0px CELLPADDING=0px> -->
-            <div HEIGHT=1px WIDTH=155px>
+            <!-- <div HEIGHT=1px WIDTH=155px>
               <div WIDTH=155px BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px ALT=""></div>
               <div WIDTH=1px BACKGROUND=./img/marker2_t.gif style="float: right;"><IMG SRC=./img/marker2_t.gif WIDTH=1 HEIGHT=30px ALT="Vertical dashed line."></div>
-            </div>
+            </div> -->
             <div HEIGHT=34px>
               <div  class="nav-item" id="home"><A HREF="javascript:location.href='home.html';" onFocus="blur();"><img name="nav_home" src=./img/nav_home.gif width=88 height=27 hspace="15" border=0px alt="Building with the words home."></a></div>
             </div>
-            <div HEIGHT=1px class="nav-item">
+            <!-- <div HEIGHT=1px class="nav-item">
               <div WIDTH=154px BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px ALT=""></div>
-            </div>
+            </div> -->
             <div HEIGHT=34px class="nav-item">
               <div id="shop"><A HREF="javascript:location.href='shop.html';" ONFOCUS="blur();"><IMG name="nav_shop" SRC=./img/nav_shop.gif WIDTH=105 HEIGHT=23 hspace="9" BORDER=0px ALT="File with the words shop."></A></div>
             </div>
-            <div HEIGHT=1px class="nav-item">
+            <!-- <div HEIGHT=1px class="nav-item">
               <div WIDTH=154px BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px ALT=""></div>
-            </div>
+            </div> -->
             <div HEIGHT=34px class="nav-item">
               <div id="news"><A HREF="javascript:location.href='news.html';" ONFOCUS="blur();"><IMG SRC=./img/nav_news.gif name="nav_news" WIDTH=90 HEIGHT=21 hspace="12" BORDER=0px ALT="Newspaper with the words shop."></A></div>
             </div>
-            <div HEIGHT=1px class="nav-item">
+            <!-- <div HEIGHT=1px class="nav-item">
               <div BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px ALT=""></div>
-            </div>
+            </div> -->
             <div HEIGHT=34px class="nav-item">
               <div id="survey"><A HREF="javascript:location.href='survey.html';" ONFOCUS="blur();"><IMG SRC=./img/nav_survey.gif name="nav_survey" WIDTH=107 HEIGHT=32 hspace="8" BORDER=0px ALT="Clipboard with the words shop."></A></div>
             </div>
-            <div HEIGHT=1px class="nav-item">
+            <!-- <div HEIGHT=1px class="nav-item">
               <div BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px ALT=""></div>
-            </div>
+            </div> -->
           <!-- </div> -->
         </div>
         <div style="padding: 1em">
@@ -253,10 +255,10 @@
         <!-- <TD WIDTH=20px><IMG SRC=./img/blank_5x5.gif WIDTH=20px HEIGHT=5px ALT="Blank 5x5 square."></TD> -->
         <div style="width: 151px" VALIGN=TOP>
           <div class="cell">
-            <div HEIGHT=1px>
-              <div WIDTH=1px BACKGROUND=./img/marker2_t.gif ROWSPAN=11 VALIGN=TOP><IMG SRC=./img/marker2_t.gif WIDTH=1px HEIGHT=30px ALT="Vertical dashed line."></TD>
+            <!-- <div HEIGHT=1px>
+              <div style="display: table-cell;" WIDTH=1px BACKGROUND=./img/marker2_t.gif ROWSPAN=11 VALIGN=TOP><IMG SRC=./img/marker2_t.gif WIDTH=1px HEIGHT=30px ALT="Vertical dashed line."></TD>
               <div WIDTH=151px BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px ALT="Horizontal dashed line."></TD>
-            </div>
+            </div> -->
             <div HEIGHT=25px>
               <div WIDTH=150px style="background-color:#A9B8BF; width: 150px;"><B>Custom Doormats</B></div>
             </div>
@@ -271,10 +273,10 @@
             </div>
           </div>
           <div class="cell">
-            <div HEIGHT=1px>
+            <!-- <div HEIGHT=1px>
               <div WIDTH=1px BACKGROUND=./img/marker2_t.gif ROWSPAN=11 VALIGN=TOP><IMG SRC=./img/marker2_t.gif WIDTH=1px HEIGHT=30px ALT="Vertical dashed line."></TD>
               <div WIDTH=151px BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px ALT="Horizontal dashed line."></TD>
-            </div>
+            </div> -->
             <div HEIGHT=25px>
               <div WIDTH=150px style="background-color:#A9B8BF; width: 150px;"><B>Mat of the Week</B></div>
             </div>
