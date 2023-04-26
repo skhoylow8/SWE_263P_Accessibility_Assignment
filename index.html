@@ -164,23 +164,26 @@
           <IMG style="font-size: 0;" SRC=./img/top_logo_next_end.gif WIDTH=24px HEIGHT=86px ALT="Gray rectangle used for the end of the border." />
           <IMG style="font-size: 0;" SRC=./img/top_door.gif WIDTH=128px HEIGHT=86px ALT="Brown door with a red mat."/>
           <IMG style="font-size: 0;" SRC=./img/top_logo_next_start.gif WIDTH=22px HEIGHT=86px ALT="Gray rectangle used for the beginning of the border."/>          
-          <div style="font-size: 0; width: 163px; background-color: rgb(222, 222, 222); text-align: center; height: 40; display: flex; flex-direction: column; align-self: center; margin-top: 4px;">
+          <form style="font-size: 0; width: 163px; background-color: rgb(222, 222, 222); text-align: center; height: 40; display: flex; flex-direction: column; align-self: center; margin-top: 4px;">
             <LABEL for="Nav">Quick Navigation</LABEL>
-            <SELECT ID="Nav" ONCHANGE="location.href = this.value;">
-              <!-- <OPTION SELECTED>QUICKNAV ----&gt; -->
-              <OPTION VALUE="../doormats.html">Doormats
-              <OPTION VALUE="../kitchen.html">Kitchen Mats
-              <OPTION VALUE="../exercise.html">Exercise Mats
-              <OPTION VALUE="../custom.html">Custom Mats
-              <OPTION VALUE="../accessories.html">Accessories
-              <OPTION VALUE="../faqs.html">FAQs
-              <OPTION VALUE="../service.html">Customer Service
-              <OPTION VALUE="../shipping.html">Shipping
-              <OPTION VALUE="../about.html">About Us
-              <OPTION VALUE="../returns.html">Returns
-              <OPTION VALUE="../contact.html">Contact Us
-            </SELECT>
-          </div>
+            <div style="display:flex; flex-direction: row;">
+              <SELECT ID="Nav" ONCHANGE="location.href = this.value;">
+                <!-- <OPTION SELECTED>QUICKNAV ----&gt; -->
+                <OPTION VALUE="../doormats.html">Doormats
+                <OPTION VALUE="../kitchen.html">Kitchen Mats
+                <OPTION VALUE="../exercise.html">Exercise Mats
+                <OPTION VALUE="../custom.html">Custom Mats
+                <OPTION VALUE="../accessories.html">Accessories
+                <OPTION VALUE="../faqs.html">FAQs
+                <OPTION VALUE="../service.html">Customer Service
+                <OPTION VALUE="../shipping.html">Shipping
+                <OPTION VALUE="../about.html">About Us
+                <OPTION VALUE="../returns.html">Returns
+                <OPTION VALUE="../contact.html">Contact Us
+              </SELECT>
+              <button type="submit" name="submit" value="submit">Go</button>
+            </div>
+          </form>
         </div>
         <img src="./img/mark.gif" alt="Gray bar" style="width: 780; height: 7;">
         <div style="display: flex; background-color: #EDEDED; justify-content: space-between; border-bottom: dashed rgb(187, 187, 187) 1px;">
